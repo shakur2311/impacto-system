@@ -1,11 +1,14 @@
 ﻿
 Public Class Form1
+    Public id As Integer
+    Public inic As New inicio
+
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        conectar()
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs)
@@ -40,12 +43,26 @@ Public Class Form1
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         Try
-            verificarLogin(TextBoxUser.Text, TextBoxPass.Text)
-            If verificarLogin(TextBoxUser.Text, TextBoxPass.Text) = True Then
-                Form2.Show()
-                Me.Hide()
+            If verificarusuario(TextBoxUser.Text) Then
+                Dim contra As String = verificarcontrasena(TextBoxUser.Text)(0)
+
+                If contra.Equals(TextBoxPass.Text) Then
+                    Dim nombre As String = verificarcontrasena(TextBoxUser.Text)(1)
+                    Dim apellidop As String = verificarcontrasena(TextBoxUser.Text)(2)
+                    Dim apellidom As String = verificarcontrasena(TextBoxUser.Text)(3)
+                    iduser = verificarcontrasena(TextBoxUser.Text)(4)
+                    Form2.Show()
+
+
+                    Me.Hide()
+
+                Else
+                    MsgBox("Contraseña incorrecta", MsgBoxStyle.Critical)
+
+                End If
+
             Else
-                MsgBox("Usuario o contraseña invalida", MsgBoxStyle.Critical)
+                MsgBox("Usuario incorrecto", MsgBoxStyle.Critical)
 
             End If
 

@@ -22,7 +22,7 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        abrirFormulario(inicio)
     End Sub
 
     Private Sub BotonMinimizar_Click(sender As Object, e As EventArgs) Handles BotonMinimizar.Click
@@ -101,5 +101,9 @@ Public Class Form2
 
     Private Sub BotonRegistrar_Click(sender As Object, e As EventArgs) Handles BotonRegistrar.Click
         abrirFormulario(registrar)
+    End Sub
+
+    Private Sub Panel3_Paint_2(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
     End Sub
 End Class

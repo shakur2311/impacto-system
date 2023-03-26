@@ -23,9 +23,9 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation7 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Dim Animation8 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
@@ -62,7 +62,7 @@ Partial Class Form2
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(50, 740)
+        Me.Panel2.Size = New System.Drawing.Size(50, 971)
         Me.Panel2.TabIndex = 1
         '
         'Panel4
@@ -78,6 +78,7 @@ Partial Class Form2
         '
         'IconButton1
         '
+        Me.IconButton1.BackColor = System.Drawing.Color.Transparent
         Me.IconButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MenuCerrar.SetDecoration(Me.IconButton1, BunifuAnimatorNS.DecorationType.None)
         Me.MenuAbrir.SetDecoration(Me.IconButton1, BunifuAnimatorNS.DecorationType.None)
@@ -93,7 +94,7 @@ Partial Class Form2
         Me.IconButton1.Rotation = 0R
         Me.IconButton1.Size = New System.Drawing.Size(36, 36)
         Me.IconButton1.TabIndex = 7
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.IconButton1.UseVisualStyleBackColor = False
         '
         'BotonRegistrar
         '
@@ -166,7 +167,7 @@ Partial Class Form2
         Me.MenuAbrir.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.MenuCerrar.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(25, 651)
+        Me.PictureBox2.Location = New System.Drawing.Point(25, 882)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(0, 54)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -185,7 +186,7 @@ Partial Class Form2
         Me.BotonSalirApp.IconChar = FontAwesome.Sharp.IconChar.Times
         Me.BotonSalirApp.IconColor = System.Drawing.Color.White
         Me.BotonSalirApp.IconSize = 35
-        Me.BotonSalirApp.Location = New System.Drawing.Point(1046, 3)
+        Me.BotonSalirApp.Location = New System.Drawing.Point(1242, 3)
         Me.BotonSalirApp.Name = "BotonSalirApp"
         Me.BotonSalirApp.Rotation = 0R
         Me.BotonSalirApp.Size = New System.Drawing.Size(36, 37)
@@ -204,7 +205,7 @@ Partial Class Form2
         Me.BotonMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
         Me.BotonMinimizar.IconColor = System.Drawing.Color.White
         Me.BotonMinimizar.IconSize = 35
-        Me.BotonMinimizar.Location = New System.Drawing.Point(962, 0)
+        Me.BotonMinimizar.Location = New System.Drawing.Point(1158, 0)
         Me.BotonMinimizar.Name = "BotonMinimizar"
         Me.BotonMinimizar.Rotation = 0R
         Me.BotonMinimizar.Size = New System.Drawing.Size(36, 37)
@@ -223,7 +224,7 @@ Partial Class Form2
         Me.BotonMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize
         Me.BotonMaximizar.IconColor = System.Drawing.Color.White
         Me.BotonMaximizar.IconSize = 35
-        Me.BotonMaximizar.Location = New System.Drawing.Point(1004, 1)
+        Me.BotonMaximizar.Location = New System.Drawing.Point(1200, 1)
         Me.BotonMaximizar.Name = "BotonMaximizar"
         Me.BotonMaximizar.Rotation = 0R
         Me.BotonMaximizar.Size = New System.Drawing.Size(36, 39)
@@ -244,31 +245,31 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MenuCerrar.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.MenuAbrir.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
-        Me.Panel3.Location = New System.Drawing.Point(229, 64)
+        Me.Panel3.Location = New System.Drawing.Point(86, 64)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(882, 641)
+        Me.Panel3.Size = New System.Drawing.Size(1221, 872)
         Me.Panel3.TabIndex = 4
         '
         'MenuAbrir
         '
         Me.MenuAbrir.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind
         Me.MenuAbrir.Cursor = Nothing
-        Animation7.AnimateOnlyDifferences = True
-        Animation7.BlindCoeff = CType(resources.GetObject("Animation7.BlindCoeff"), System.Drawing.PointF)
-        Animation7.LeafCoeff = 0!
-        Animation7.MaxTime = 1.0!
-        Animation7.MinTime = 0!
-        Animation7.MosaicCoeff = CType(resources.GetObject("Animation7.MosaicCoeff"), System.Drawing.PointF)
-        Animation7.MosaicShift = CType(resources.GetObject("Animation7.MosaicShift"), System.Drawing.PointF)
-        Animation7.MosaicSize = 0
-        Animation7.Padding = New System.Windows.Forms.Padding(0)
-        Animation7.RotateCoeff = 0!
-        Animation7.RotateLimit = 0!
-        Animation7.ScaleCoeff = CType(resources.GetObject("Animation7.ScaleCoeff"), System.Drawing.PointF)
-        Animation7.SlideCoeff = CType(resources.GetObject("Animation7.SlideCoeff"), System.Drawing.PointF)
-        Animation7.TimeCoeff = 0!
-        Animation7.TransparencyCoeff = 0!
-        Me.MenuAbrir.DefaultAnimation = Animation7
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.MenuAbrir.DefaultAnimation = Animation2
         '
         'Panel1
         '
@@ -280,29 +281,29 @@ Partial Class Form2
         Me.MenuAbrir.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.Panel1.Location = New System.Drawing.Point(56, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1085, 40)
+        Me.Panel1.Size = New System.Drawing.Size(1281, 40)
         Me.Panel1.TabIndex = 7
         '
         'MenuCerrar
         '
         Me.MenuCerrar.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
         Me.MenuCerrar.Cursor = Nothing
-        Animation8.AnimateOnlyDifferences = True
-        Animation8.BlindCoeff = CType(resources.GetObject("Animation8.BlindCoeff"), System.Drawing.PointF)
-        Animation8.LeafCoeff = 0!
-        Animation8.MaxTime = 1.0!
-        Animation8.MinTime = 0!
-        Animation8.MosaicCoeff = CType(resources.GetObject("Animation8.MosaicCoeff"), System.Drawing.PointF)
-        Animation8.MosaicShift = CType(resources.GetObject("Animation8.MosaicShift"), System.Drawing.PointF)
-        Animation8.MosaicSize = 0
-        Animation8.Padding = New System.Windows.Forms.Padding(0)
-        Animation8.RotateCoeff = 0!
-        Animation8.RotateLimit = 0!
-        Animation8.ScaleCoeff = CType(resources.GetObject("Animation8.ScaleCoeff"), System.Drawing.PointF)
-        Animation8.SlideCoeff = CType(resources.GetObject("Animation8.SlideCoeff"), System.Drawing.PointF)
-        Animation8.TimeCoeff = 0!
-        Animation8.TransparencyCoeff = 0!
-        Me.MenuCerrar.DefaultAnimation = Animation8
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.MenuCerrar.DefaultAnimation = Animation1
         '
         'BunifuDragControl2
         '
@@ -323,7 +324,7 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1153, 740)
+        Me.ClientSize = New System.Drawing.Size(1349, 971)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)

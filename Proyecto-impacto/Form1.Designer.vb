@@ -27,23 +27,23 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBoxUser = New System.Windows.Forms.TextBox()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconButton3 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton3 = New FontAwesome.Sharp.IconButton()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.TextBoxPass = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,12 +77,60 @@ Partial Class Form1
         Me.BunifuDragControl1.TargetControl = Me.Panel3
         Me.BunifuDragControl1.Vertical = True
         '
+        'Panel3
+        '
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(280, 36)
+        Me.Panel3.TabIndex = 2
+        '
         'BunifuDragControl2
         '
         Me.BunifuDragControl2.Fixed = True
         Me.BunifuDragControl2.Horizontal = True
         Me.BunifuDragControl2.TargetControl = Me.Panel1
         Me.BunifuDragControl2.Vertical = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.IconButton3)
+        Me.Panel1.Controls.Add(Me.IconButton1)
+        Me.Panel1.Location = New System.Drawing.Point(286, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(515, 36)
+        Me.Panel1.TabIndex = 12
+        '
+        'IconButton3
+        '
+        Me.IconButton3.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton3.FlatAppearance.BorderSize = 0
+        Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Times
+        Me.IconButton3.IconColor = System.Drawing.Color.Black
+        Me.IconButton3.IconSize = 16
+        Me.IconButton3.Location = New System.Drawing.Point(479, -3)
+        Me.IconButton3.Name = "IconButton3"
+        Me.IconButton3.Rotation = 0R
+        Me.IconButton3.Size = New System.Drawing.Size(30, 42)
+        Me.IconButton3.TabIndex = 16
+        Me.IconButton3.UseVisualStyleBackColor = False
+        '
+        'IconButton1
+        '
+        Me.IconButton1.BackColor = System.Drawing.Color.Transparent
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconSize = 16
+        Me.IconButton1.Location = New System.Drawing.Point(437, -3)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Rotation = 0R
+        Me.IconButton1.Size = New System.Drawing.Size(36, 39)
+        Me.IconButton1.TabIndex = 14
+        Me.IconButton1.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -94,22 +142,6 @@ Partial Class Form1
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(280, 400)
         Me.Panel2.TabIndex = 11
-        '
-        'Panel3
-        '
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(280, 36)
-        Me.Panel3.TabIndex = 2
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.IconButton3)
-        Me.Panel1.Controls.Add(Me.IconButton1)
-        Me.Panel1.Location = New System.Drawing.Point(286, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(515, 36)
-        Me.Panel1.TabIndex = 12
         '
         'BunifuFlatButton1
         '
@@ -185,42 +217,10 @@ Partial Class Form1
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
         '
-        'IconButton1
-        '
-        Me.IconButton1.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconSize = 16
-        Me.IconButton1.Location = New System.Drawing.Point(437, -3)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Rotation = 0R
-        Me.IconButton1.Size = New System.Drawing.Size(36, 39)
-        Me.IconButton1.TabIndex = 14
-        Me.IconButton1.UseVisualStyleBackColor = False
-        '
-        'IconButton3
-        '
-        Me.IconButton3.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton3.FlatAppearance.BorderSize = 0
-        Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Times
-        Me.IconButton3.IconColor = System.Drawing.Color.Black
-        Me.IconButton3.IconSize = 16
-        Me.IconButton3.Location = New System.Drawing.Point(479, -3)
-        Me.IconButton3.Name = "IconButton3"
-        Me.IconButton3.Rotation = 0R
-        Me.IconButton3.Size = New System.Drawing.Size(30, 42)
-        Me.IconButton3.TabIndex = 16
-        Me.IconButton3.UseVisualStyleBackColor = False
-        '
         'BunifuSeparator1
         '
         Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator1.LineColor = System.Drawing.Color.DimGray
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.BunifuSeparator1.LineThickness = 1
         Me.BunifuSeparator1.Location = New System.Drawing.Point(462, 131)
         Me.BunifuSeparator1.Name = "BunifuSeparator1"
@@ -275,8 +275,8 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
